@@ -19,12 +19,7 @@ const Styles = styled.div`
 
 //export const NavigationBar2 = () => (
 export function NavigationBar2(){
-    const auth = useAuth();
-    const { data: user } = useUser();
-    console.log(user.email);
-    function salir() {
-        auth.signOut();
-    }
+    
     return(
         <Styles>
             <Navbar collapseOnSelect fixed='top' expand="lg">
@@ -34,7 +29,7 @@ export function NavigationBar2(){
                     <Nav className="ml-auto">
                     </Nav>
                     <Form inline>
-                        <Button variant="outline-success" onClick={salir} href="/">Cerrar Sesion</Button>
+                        <Button variant="outline-success" href="/">Cerrar Sesion</Button>
                     </Form>  
                 </Navbar.Collapse>
             </Navbar>
