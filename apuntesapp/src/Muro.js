@@ -21,7 +21,6 @@ const Styles = styled.div`
 
 export function Muro(){
     return(
-        
         <Styles>
             <NavigationBar2/>
             <h1></h1>
@@ -33,19 +32,19 @@ export function Muro(){
             <h1></h1>
             <h1></h1>
             <Card style={{ width: '20rem' }}>
-                <Form>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Agregar nuevo apunte</Form.Label>
-                        <Form.Control type="input" placeholder="Titulo" />
-                    </Form.Group>
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Agregar nuevo apunte</Form.Label>
+                    <Form.Control type="input" placeholder="Titulo" />
+                </Form.Group>
 
-                    <Form.Group controlId="formBasicPassword">
-                        <Form.Control as="textarea" rows={3} placeholder="Descripcion" />
-                    </Form.Group>
-                    <Button>
-                        publicar
-                    </Button>
-                    <h1></h1>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Control as="textarea" rows={3} placeholder="Descripcion" />
+                </Form.Group>
+                <Button>
+                    publicar
+                </Button>
+                <h1></h1>
                 </Form>
             </Card>
         </Styles>

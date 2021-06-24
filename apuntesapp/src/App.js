@@ -23,5 +23,5 @@ class App extends Component {
     );
   }
 }
-
+//<Route path="/Muro" component={Muro} />
 export default App;

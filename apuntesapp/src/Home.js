@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import { NavigationBar } from './components/NavigationBar';
 import { useFirestoreDocData, useFirestore, useFirestoreCollectionData, useAuth, useUser, auth} from 'reactfire';
 import { BrowserRouter as Router, Route, Switch, Link, useHistory } from 'react-router-dom';
-
+import {Card} from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -52,11 +52,15 @@ export function Home(){
     <Styles>
         <div>
             <NavigationBar/>
-            <Form>
-                <h1>
+            <h1>
                 x
 
-                </h1>
+            </h1>
+            <h1>
+                x
+            </h1>
+            <Card style={{ width: '20rem' }}>
+            <Form>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label></Form.Label>
                     <Form.Control type="email" placeholder="Ingrese email"  value={email} onChange={e => setEmail(e.target.value)}/>
@@ -74,8 +78,9 @@ export function Home(){
                 <Button onClick={registrar}>
                     Registrar
                 </Button>
+                <h1></h1>
             </Form>
-            
+            </Card>
         </div>
     </Styles>
     );    
