@@ -45,7 +45,7 @@ export function Home(){
         history.push(path);
     }
     function ingresar() {
-        auth.signInWithEmailAndPassword(email, password).then(() => handleClick("/Feed")).catch(err => console.log(err));
+        auth.signInWithEmailAndPassword(email, password).then(() => handleClick("/Muro")).catch(err => console.log(err));
     //    var user = auth.currentUser;
     };
     return(

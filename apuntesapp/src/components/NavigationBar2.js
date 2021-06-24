@@ -23,9 +23,18 @@ export function NavigationBar2(){
     return(
         <Styles>
             <Navbar collapseOnSelect fixed='top' expand="lg">
-                <Navbar.Brand>React News Feed</Navbar.Brand>
+                <Navbar.Brand>Apuntes app</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
+                <Form className="d-flex">
+                        <FormControl
+                        type="search"
+                        placeholder="Ingrese apunte"
+                        className="mr-2"
+                        aria-label="Search"
+                        />
+                      <Button  variant="outline-success">Buscar</Button>
+                    </Form>
                     <Nav className="ml-auto">
                     </Nav>
                     <Form inline>

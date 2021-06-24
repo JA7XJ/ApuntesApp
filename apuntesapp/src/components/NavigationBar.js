@@ -19,7 +19,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar collapseOnSelect fixed='top' expand="lg">
-      <Navbar.Brand>React News Feed</Navbar.Brand>
+      <Navbar.Brand>Apuntes app</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
