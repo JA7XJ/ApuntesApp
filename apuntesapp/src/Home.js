@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import  Lista  from './lista';
 import { NavigationBar } from './components/NavigationBar';
 import { useFirestoreDocData, useFirestore, useFirestoreCollectionData, useAuth, useUser, auth} from 'reactfire';
 import { BrowserRouter as Router, Route, Switch, Link, useHistory } from 'react-router-dom';
@@ -45,7 +46,7 @@ export function Home(){
         history.push(path);
     }
     function ingresar() {
-        auth.signInWithEmailAndPassword(email, password).then(() => handleClick("/Muro")).catch(err => console.log(err));
+        auth.signInWithEmailAndPassword(email, password).then(() => handleClick("/lista")).catch(err => console.log(err));
     //    var user = auth.currentUser;
     };
     return(

@@ -20,6 +20,7 @@ const Styles = styled.div`
 
 
 export function Muro(){
+    
     return(
         <Styles>
             <NavigationBar2/>
